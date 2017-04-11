@@ -1,9 +1,35 @@
-<html>
-<head>
-   <!-- HTML meta refresh URL redirection -->
-   <meta http-equiv="refresh"
-   content="0; url=http://servicedesk.health.go.ke">
-</head>
-<body>
-</body>
+<!DOCTYPE html>
+<html ><!--ng-app="appMenu"> -->
+    <head>
+        <title>MOH Quicklinks</title>
+
+        <!-- Stylesheets related to the menu -->
+        <link type="text/css" rel="stylesheet" href="./dhis-web-commons/font-awesome/css/font-awesome.min.css"/>
+        <link type="text/css" rel="stylesheet" media="screen" href="./dhis-web-commons/css/menu.css">
+    </head>
+
+    <body style="background-color: black;">
+
+        <div id="dhisDropDownMenu"></div>
+
+        <!-- DHIS2 Settings initialization for a baseUrl that is used for the menu -->
+        <script>
+            window.dhis2 = window.dhis2 || {};
+            dhis2.settings = dhis2.settings || {};
+            dhis2.settings.baseUrl = 'dhis';
+        </script>
+
+        <div>
+          <p><i class="fa fa-list-o fa-5x" aria-hidden="true"></i> KHMFL</p>
+          <p><i class="fa fa-question fa-5x" aria-hidden="true"></i> Service Desk</p>
+          <p><i class="fa fa-info-circle fa-5x" aria-hidden="true"></i> MOH Website</p>
+        </div>
+
+        <!-- Menu scripts -->
+        <script type="text/javascript" src="./dhis-web-commons/javascripts/jQuery/jquery.min.js"></script>
+        <script type="text/javascript" src="./dhis-web-commons/javascripts/dhis2/dhis2.translate.js"></script>
+        <script type="text/javascript" src="./dhis-web-commons/javascripts/dhis2/dhis2.menu.js"></script>
+        <script type="text/javascript" src="./dhis-web-commons/javascripts/dhis2/dhis2.menu.ui.js"></script>
+
+    </body>
 </html>

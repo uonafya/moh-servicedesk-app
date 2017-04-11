@@ -1,7 +1,7 @@
 {
 	"version":"1.0.0",
-	"name":"MOH ServiceDesk",
-	"description":"MOH ServiceDesk",
+	"name":"MOH Quicklinks",
+	"description":"MOH Quicklinks",
 	"launch_path":"index.html",
 	"icons":{"16":null,
 	"48":"res/moh-logo.png",
@@ -16,7 +16,7 @@
 	"default_locale":"en",
 	"activities": {
 		"dhis": {
-	  		"href": "*"
+			"href": "*"
 		}
 	}
 }
